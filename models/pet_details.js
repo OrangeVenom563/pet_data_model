@@ -16,8 +16,9 @@ const petDetailSchema = new mongoose.Schema({
         required:true
     },
     owner_details:{
+        required:false,
         type:ObjectId,
-        ref:Customer
+        ref:"Customer"
     }
 })
 
